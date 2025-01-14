@@ -1,0 +1,52 @@
+inputs:
+  # 项目名称，没啥用
+  - name: project-MacOS
+    # paths扫描频率(秒)
+    scan_frequency: 60
+    alert_count: 2
+    # 监控的文件，支持glob
+    paths:
+      - ./*.log
+    # 监控内容，包含内容即告警
+    include_lines: ['error', 'warning']
+    # 排除监控内容，包含不告警
+    exclude_lines:
+      - "success"
+
+#  飞书 body
+output.http:
+  method: POST
+  url: https://open.feishu.cn/open-apis/bot/v2/hook/645a07ba-2523-4162-9790-55f01f077941
+  headers:
+    - Content-Type application/json;charset=UTF-8
+  format: json
+  body: >
+    {
+    	"msg_type": "interactive",
+    	"card": {
+    		"elements": [{
+    			"tag": "div",
+    			"text": {
+    				"content": "<at email='wanglefu@doowintech.com'></at> 日志报警内容\n%{content}",
+    				"tag": "lark_md"
+    			}
+    		}]
+    	}
+    }
+
+
+# 企业微信 body
+
+#output.http:
+#  method: POST
+#  url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e2e38d03-e38e-4eed-a631-6fb96031f39c
+#  headers:
+#    - Content-Type application/json;charset=UTF-8
+#  format: json
+#  body: >
+#    {
+#      "msgtype": "markdown",
+#      "markdown": {
+#        "content": "DIY报警内容\n<font color=\"warning\">%{content}</font>"
+#      }
+#    }

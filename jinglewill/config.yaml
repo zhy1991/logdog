@@ -1,0 +1,76 @@
+inputs:
+  - name: nginx_log
+    alert_count: 5
+    paths:
+      - /var/log/nginx/error.log
+    include_lines: ['error', 'no live upstreams','upstream prematurely closed']
+
+  - name: api.paisayaar.pk
+    alert_count: 10
+    paths:
+      - /var/log/nginx/api.paisayaar.pk.access.log
+    include_lines: [' 502 ']
+
+  - name: pk-admin.jinglewill.pro
+    alert_count: 10
+    paths:
+      - /var/log/nginx/pk-admin.jinglewill.pro.access.log
+    include_lines: [' 502 ']
+scan:
+  frequency: 60
+
+output:
+  method: POST
+  url: https://open.feishu.cn/open-apis/bot/v2/hook/baa43d2e-c330-4030-8449-466af5053847
+  headers: {"Content-Type": "application/json",}
+  format: json
+  # 占位符 (${format_time}，{alert_results}，${triggered_keywords_results} 日志告警行的内容)
+  body: >
+    {
+      "msg_type": "interactive",
+      "card": {
+        "header": {
+          "title": {
+            "content": "🛑 **DIY 报警内容**",
+            "tag": "lark_md"
+          }
+        },
+        "elements": [
+          {
+            "tag": "div",
+            "text": {
+              "content": "**告警时间:** ${format_time}",
+              "tag": "lark_md"
+            }
+          },
+          {
+            "tag": "div",
+            "text": {
+              "content": "**告警统计:**\n<font color=\"green\">${alert_results}</font>",
+              "tag": "lark_md"
+            }
+          },
+          {
+            "tag": "div",
+            "text": {
+              "content": "**触发的关键字:**\n<font color=\"red\">${triggered_keywords_results}</font> \n <at email=wangqingshuai@doowintech.com></at>",
+              "tag": "lark_md"
+            }
+          },
+          {
+            "tag": "div",
+            "text": {
+              "content": "----",
+              "tag": "lark_md"
+            }
+          },
+          {
+            "tag": "div",
+            "text": {
+              "content": "⚠️ **注意事项:**\n- 请尽快处理\n- 如果有疑问，请联系管理员 ",
+              "tag": "lark_md"
+            }
+          }
+        ]
+      }
+    }

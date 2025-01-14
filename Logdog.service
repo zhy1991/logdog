@@ -1,0 +1,22 @@
+[Unit]
+Description=Logdog
+
+[Service]
+WorkingDirectory=/opt/Logdog/
+PrivateTmp=true
+Restart=always
+Type=simple
+ExecStart=/opt/Logdog/Logdog -c /opt/Logdog/config.yaml
+ExecStop=/usr/bin/kill -15 $MAINPID
+User=root
+Group=root
+LimitCORE=infinity
+LimitNOFILE=65535
+LimitNPROC=65535
+
+[Install]
+WantedBy=multi-user.target
+
+
+# 0 8 * * * /bin/systemctl start Logdog
+# 0 18 * * * /bin/systemctl stop Logdog
