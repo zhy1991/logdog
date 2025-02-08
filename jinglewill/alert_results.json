@@ -1,0 +1,458 @@
+[
+    {
+        "timestamp": "2025-01-12 10:05:16",
+        "alert_results": {
+            "/var/log/nginx/error.log": 3
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-12 10:07:19",
+        "alert_results": {
+            "/var/log/nginx/api.paisayaar.pk.access.log": 10,
+            "/var/log/nginx/error.log": 10
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/api.paisayaar.pk.access.log": [
+                " 502 "
+            ],
+            "/var/log/nginx/error.log": [
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 15:40:07",
+        "alert_results": {
+            "/var/log/nginx/error.log": 18
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 15:42:09",
+        "alert_results": {
+            "/var/log/nginx/error.log": 20
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 15:59:11",
+        "alert_results": {
+            "/var/log/nginx/error.log": 15
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 16:32:14",
+        "alert_results": {
+            "/var/log/nginx/error.log": 462,
+            "/var/log/nginx/pk-admin.jinglewill.pro.access.log": 226
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "no live upstreams",
+                "error"
+            ],
+            "/var/log/nginx/pk-admin.jinglewill.pro.access.log": [
+                " 502 "
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 16:35:17",
+        "alert_results": {
+            "/var/log/nginx/error.log": 17
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 16:49:20",
+        "alert_results": {
+            "/var/log/nginx/error.log": 21
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 16:55:23",
+        "alert_results": {
+            "/var/log/nginx/error.log": 12
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 17:22:26",
+        "alert_results": {
+            "/var/log/nginx/error.log": 19
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-25 17:43:29",
+        "alert_results": {
+            "/var/log/nginx/error.log": 13
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "upstream prematurely closed",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 09:35:07",
+        "alert_results": {
+            "/var/log/nginx/error.log": 504,
+            "/var/log/nginx/pk-admin.jinglewill.pro.access.log": 246
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error",
+                "upstream prematurely closed"
+            ],
+            "/var/log/nginx/pk-admin.jinglewill.pro.access.log": [
+                " 502 "
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 09:38:09",
+        "alert_results": {
+            "/var/log/nginx/error.log": 10
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 09:56:12",
+        "alert_results": {
+            "/var/log/nginx/error.log": 10
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 10:59:18",
+        "alert_results": {
+            "/var/log/nginx/error.log": 426
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 11:57:22",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11,
+            "/var/log/nginx/api.paisayaar.pk.access.log": 10
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ],
+            "/var/log/nginx/api.paisayaar.pk.access.log": [
+                " 502 "
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 12:24:26",
+        "alert_results": {
+            "/var/log/nginx/error.log": 360
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 12:56:29",
+        "alert_results": {
+            "/var/log/nginx/error.log": 16,
+            "/var/log/nginx/api.paisayaar.pk.access.log": 15
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ],
+            "/var/log/nginx/api.paisayaar.pk.access.log": [
+                " 502 "
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 13:53:35",
+        "alert_results": {
+            "/var/log/nginx/error.log": 13
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 13:54:37",
+        "alert_results": {
+            "/var/log/nginx/error.log": 10
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 13:55:38",
+        "alert_results": {
+            "/var/log/nginx/error.log": 13
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 14:13:41",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 14:58:48",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 14:59:50",
+        "alert_results": {
+            "/var/log/nginx/error.log": 282
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 15:04:52",
+        "alert_results": {
+            "/var/log/nginx/error.log": 16
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 15:19:55",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 15:49:59",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 15:59:01",
+        "alert_results": {
+            "/var/log/nginx/error.log": 26
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 16:00:04",
+        "alert_results": {
+            "/var/log/nginx/error.log": 232
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "no live upstreams",
+                "error"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 16:26:07",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 16:31:09",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 16:38:12",
+        "alert_results": {
+            "/var/log/nginx/error.log": 17
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-26 16:44:14",
+        "alert_results": {
+            "/var/log/nginx/error.log": 12
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-27 10:23:10",
+        "alert_results": {
+            "/var/log/nginx/error.log": 11
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-27 11:31:16",
+        "alert_results": {
+            "/var/log/nginx/error.log": 13
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    },
+    {
+        "timestamp": "2025-01-27 11:35:18",
+        "alert_results": {
+            "/var/log/nginx/error.log": 20
+        },
+        "triggered_keywords": {
+            "/var/log/nginx/error.log": [
+                "error",
+                "upstream prematurely closed"
+            ]
+        }
+    }
+]
